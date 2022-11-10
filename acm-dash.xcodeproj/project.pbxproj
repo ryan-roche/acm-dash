@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94A2DB0229085261005223E1 /* acm_dashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2DB0129085261005223E1 /* acm_dashApp.swift */; };
-		94A2DB0429085261005223E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2DB0329085261005223E1 /* ContentView.swift */; };
+		94A2DB0429085261005223E1 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2DB0329085261005223E1 /* MyView.swift */; };
 		94A2DB0629085262005223E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A2DB0529085262005223E1 /* Assets.xcassets */; };
 		94A2DB0929085262005223E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A2DB0829085262005223E1 /* Preview Assets.xcassets */; };
 		94A2DB1429085262005223E1 /* acm_dashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A2DB1329085262005223E1 /* acm_dashTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		94A2DAFE29085261005223E1 /* acm-dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "acm-dash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A2DB0129085261005223E1 /* acm_dashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acm_dashApp.swift; sourceTree = "<group>"; };
-		94A2DB0329085261005223E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94A2DB0329085261005223E1 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		94A2DB0529085262005223E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A2DB0829085262005223E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A2DB0A29085262005223E1 /* acm_dash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = acm_dash.entitlements; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				94A2DB0129085261005223E1 /* acm_dashApp.swift */,
-				94A2DB0329085261005223E1 /* ContentView.swift */,
+				94A2DB0329085261005223E1 /* MyView.swift */,
 				94A2DB0529085262005223E1 /* Assets.xcassets */,
 				94A2DB0A29085262005223E1 /* acm_dash.entitlements */,
 				94A2DB0729085262005223E1 /* Preview Content */,
@@ -193,7 +193,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					94A2DAFD29085261005223E1 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A2DB0429085261005223E1 /* ContentView.swift in Sources */,
+				94A2DB0429085261005223E1 /* MyView.swift in Sources */,
 				94A2DB0229085261005223E1 /* acm_dashApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +330,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -390,6 +391,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -415,10 +417,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "acm-dash/acm_dash.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"acm-dash/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -440,10 +445,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "acm-dash/acm_dash.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"acm-dash/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -467,6 +475,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
@@ -485,6 +494,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
@@ -502,6 +512,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryan-roche.acm-dashUITests";
@@ -518,6 +529,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryan-roche.acm-dashUITests";

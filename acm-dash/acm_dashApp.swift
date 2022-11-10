@@ -11,7 +11,7 @@ import SwiftUI
 struct acm_dashApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyView()
         }
     }
 }
